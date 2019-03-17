@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.hg.danmoxiang_rrmvp"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/main_icon"
+        android:label="@string/app_name"
+        android:name="com.hg.danmoxiang_rrmvp.app.BaseApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.auth.LoginActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.warehouse.WareHouseActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.warehouse.ProductInWHActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.warehouse.ProductOutWHActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.warehouse.InPurchaseOrderActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.warehouse.OutSalesOrderActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.returnsgoods.ReturnsGoodsActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.setting.SettingActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.HomeActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.stocking.StockingActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.inventory.InventorySearchActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.inventory.InventoryActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.inventory.InverntoryManageActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.ScanningActivity"/>
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.auth.SettingApiActivity" />
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormActivity" />
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormMangeActivity" />
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormSearchActivity" />
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+
+
+</manifest>

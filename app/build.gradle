@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.hg.danmoxiang_rrmvp"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1003
+        versionName "1.0.0.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+ext {
+    androidutilsVersion = '1.0.6'
+    appcompatVersion = '28.0.0'
+    butterknifeVersion = '8.8.1'
+    retrofitVersion = '2.3.0'
+    logginginterceptor = '3.9.1'
+    rxjavaVersion = '2.1.11'
+    rxandroidVersion = "2.0.2"
+    switchbuttonVersion =  "0.0.3"
+    BannerLayoutVersion = "1.0.6"
+    qrcodeVersion = "1.3.6"
+    glideVersion = "4.8.0"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.wuxiaolong.androidutils:androidutils:$androidutilsVersion"
+    implementation "com.android.support:appcompat-v7:$appcompatVersion"
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logginginterceptor"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjavaVersion"
+    implementation "com.github.zcweng:switch-button:$switchbuttonVersion@aar"
+    implementation "com.github.dongjunkun:BannerLayout:$BannerLayoutVersion"
+    implementation "cn.bingoogolapple:bga-qrcode-zbar:$qrcodeVersion"
+    implementation 'com.jakewharton.timber:timber:4.5.1'
+    implementation "com.android.support:recyclerview-v7:$appcompatVersion"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+
+}

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">淡墨象</string>
+    <string name="login_title_text">智能仓库条码软件标准版</string>
+    <string name="input_user_name_hint">请输入您的账号</string>
+    <string name="input_user_pwd_hint">请输入您的密码</string>
+    <string name="btn_login_text">登录</string>
+    <string name="btn_text_save">保存</string>
+    <string name="btn_text_search">查询</string>
+    <string name="btn_text_scann_search">扫描查询</string>
+
+    <!-- 入库-->
+    <string name="input_warehouse_code">请输入入库编码</string>
+    <string name="text_warehouse_code">入库编码</string>
+    <string name="text_get_company">收货库位</string>
+    <string name="input_get_company">请输入收货库位</string>
+    <string name="text_get_count">收货数量</string>
+    <string name="text_materiel_code">物料条码</string>
+    <string name="input_materiel_code">请扫描物料条码</string>
+    <string name="text_code_count">条码数量</string>
+    <string name="text_serializable_number">序列号</string>
+
+    <!-- 出库 -->
+    <string name="input_out_warehouse_code">请输入出库编码</string>
+    <string name="text_out_warehouse_code">出库编码</string>
+    <string name="text_out_customer_code">客户编码</string>
+    <string name="input_out_customer_code">请输入客户编码</string>
+    <string name="text_out_company">出库库位</string>
+    <string name="input_out_company">请输入出货库位</string>
+    <string name="text_out_count">出库数量</string>
+    <string name="text_sann_code">扫描条码</string>
+    <string name="input_sann_code">请扫描条码</string>
+
+    <!-- 采购单入库-->
+    <string name="text_purchase_order_number">采购单号</string>
+    <string name="input_purchase_order_number">请输入采购单号</string>
+
+    <!-- 销售订单出库-->
+    <string name="text_sales_order_number">销售单号</string>
+    <string name="input_sales_order_number">请输入销售单号</string>
+
+    <!-- 销售退货 -->
+    <string name="text_returns_goods_code">退货编码</string>
+    <string name="input_returns_goods_code">请输入退货编码</string>
+    <string name="text_returns_goods_unit_code">库位编码</string>
+    <string name="text_returns_goods_count">退货数量</string>
+    <string name="input_returns_goods_unit_code">请输入库位编码</string>
+
+    <!-- 库存查询-->
+    <string name="text_materiel_count">物料数量</string>
+    <!-- 设置APi-->
+    <string name="text_setting_api">域名</string>
+    <string name="input_setting_api">请设置域名</string>
+    
+    <!--  要货单 -->
+    <string name="text_product_form_number">要货单号</string>
+    <string name="text_customer_name">客户名称</string>
+    <string name="text_saleser_name">业务员</string>
+    <string name="text_finish_date">交货日期</string>
+    <string name="text_materiel">要货物料</string>
+    <string name="input_materiel">请输入要货物料</string>
+    <string name="text_masteriel_info">物料信息</string>
+    <string name="text_inventory_count">库存数量</string>
+    <string name="text_product_count">要货数量</string>
+
+
+</resources>

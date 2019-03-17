@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonbggreen">#3FA862</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#181818</color>
+    <color name="ghostwhite">#F8F8FF</color>
+    <color name="color_background">#EEEEEE</color>
+    <color name="color_txt_hint">#ff999999</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="enable_button">#3AC941</color>
+    <color name="blue_button">#42B7F0</color>
+</resources>
