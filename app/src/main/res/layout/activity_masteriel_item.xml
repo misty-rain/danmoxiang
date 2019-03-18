@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            >
+    <TextView
+        android:id="@+id/txtcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="条码"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="物料名称"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dip"
+        android:text="型号"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtcount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dip"
+        android:text="数量"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/txtlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dip"
+        android:text="库位"
+
+        android:textSize="15sp" />
+    <View
+        android:layout_width="1.5dp"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dip"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -8,8 +8,8 @@ import android.widget.AdapterView;
 import com.hg.danmoxiang_rrmvp.R;
 import com.hg.danmoxiang_rrmvp.app.GlideImageLoader;
 import com.hg.danmoxiang_rrmvp.mvp.base.BaseContract;
+import com.hg.danmoxiang_rrmvp.mvp.base.BasePresenter;
 import com.hg.danmoxiang_rrmvp.mvp.base.MvpActivity;
-import com.hg.danmoxiang_rrmvp.mvp.presenter.WareHousePresenter;
 import com.hg.danmoxiang_rrmvp.ui.adapter.WareHouseMenuAdapter;
 import com.hg.danmoxiang_rrmvp.ui.widget.ExtendGridView;
 import com.yyydjk.library.BannerLayout;
@@ -19,7 +19,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class WareHouseActivity extends MvpActivity<WareHousePresenter> implements BaseContract {
+public class WareHouseActivity extends MvpActivity<BasePresenter> implements BaseContract {
 
     @BindView(R.id.warehousemenugridview)
     ExtendGridView wGridView;
@@ -67,8 +67,8 @@ public class WareHouseActivity extends MvpActivity<WareHousePresenter> implement
     }
 
     @Override
-    protected WareHousePresenter createPresenter() {
-        return new WareHousePresenter(this);
+    protected BasePresenter createPresenter() {
+        return null;
     }
 
 

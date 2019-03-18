@@ -4,12 +4,6 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/**
- * Created by WuXiaolong on 2016/9/22.
- * github:https://github.com/WuXiaolong/
- * 微信公众号：吴小龙同学
- * 个人博客：http://wuxiaolong.me/
- */
 
 public abstract class RetrofitCallback<M> implements Callback<M> {
 

@@ -9,17 +9,19 @@ import android.widget.TextView;
 
 import com.hg.danmoxiang_rrmvp.R;
 import com.hg.danmoxiang_rrmvp.app.contants.SysConstants;
-import com.hg.danmoxiang_rrmvp.mvp.base.BaseContract;
 import com.hg.danmoxiang_rrmvp.mvp.base.MvpActivity;
+import com.hg.danmoxiang_rrmvp.mvp.contract.WareHouseContract;
+import com.hg.danmoxiang_rrmvp.mvp.model.entity.Materiel;
 import com.hg.danmoxiang_rrmvp.mvp.presenter.WareHousePresenter;
 import com.hg.danmoxiang_rrmvp.ui.activity.ScanningActivity;
-import com.hg.danmoxiang_rrmvp.ui.widget.SmoothCheckBox;
 import com.suke.widget.SwitchButton;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class ProductOutWHActivity extends MvpActivity<WareHousePresenter> implements BaseContract {
+public class ProductOutWHActivity extends MvpActivity<WareHousePresenter> implements WareHouseContract {
 
     @BindView(R.id.toolbar_title)
     TextView txtTitle;
@@ -72,4 +74,8 @@ public class ProductOutWHActivity extends MvpActivity<WareHousePresenter> implem
     }
 
 
+    @Override
+    public void showMaterielInfo(List<Materiel> materiel) {
+
+    }
 }

@@ -19,6 +19,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import butterknife.ButterKnife;
 
 
 public abstract class BaseHolder<T> extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -29,6 +30,7 @@ public abstract class BaseHolder<T> extends RecyclerView.ViewHolder implements V
         super(itemView);
         //点击事件
         itemView.setOnClickListener(this);
+        ButterKnife.bind(this,itemView);
         /*//屏幕适配
         if (ThirdViewUtil.isUseAutolayout()) AutoUtils.autoSize(itemView);
         //绑定 ButterKnife
@@ -47,7 +49,7 @@ public abstract class BaseHolder<T> extends RecyclerView.ViewHolder implements V
      * 在 Activity 的 onDestroy 中使用 {@link DefaultAdapter#releaseAllHolder(RecyclerView)} 方法 (super.onDestroy() 之前)
      * {@link BaseHolder#onRelease()} 才会被调用, 可以在此方法中释放一些资源
      */
-    protected void onRelease() {
+    public void onRelease() {
 
     }
 

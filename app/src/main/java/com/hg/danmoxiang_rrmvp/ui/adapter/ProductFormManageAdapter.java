@@ -12,7 +12,7 @@ import com.hg.danmoxiang_rrmvp.R;
 
 public class ProductFormManageAdapter extends BaseAdapter {
     private Context context;
-    private int [] imgs = {R.mipmap.main_icon_inout,R.mipmap.main_icon_productform
+    private int [] imgs = {R.mipmap.pf_form_icon,R.mipmap.pf_form_search
     };
     private  String [] strs = {"要货单","要货单状态查询"};
 

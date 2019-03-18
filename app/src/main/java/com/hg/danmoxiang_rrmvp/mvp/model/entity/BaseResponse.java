@@ -3,18 +3,36 @@ package com.hg.danmoxiang_rrmvp.mvp.model.entity;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class BaseResponse implements Parcelable {
-    private String data;
+public class BaseResponse<T> implements Parcelable {
+    private T data;
     private String msg;
     private String result;
 
-    public String getData() {
+    protected BaseResponse(Parcel in) {
+        msg = in.readString();
+        result = in.readString();
+    }
+
+    public static final Creator<BaseResponse> CREATOR = new Creator<BaseResponse>() {
+        @Override
+        public BaseResponse createFromParcel(Parcel in) {
+            return new BaseResponse(in);
+        }
+
+        @Override
+        public BaseResponse[] newArray(int size) {
+            return new BaseResponse[size];
+        }
+    };
+
+    public T getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(T data) {
         this.data = data;
     }
+
 
     public String getMsg() {
         return msg;
@@ -39,7 +57,6 @@ public class BaseResponse implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.data);
         dest.writeString(this.msg);
         dest.writeString(this.result);
     }
@@ -47,21 +64,5 @@ public class BaseResponse implements Parcelable {
     public BaseResponse() {
     }
 
-    protected BaseResponse(Parcel in) {
-        this.data = in.readString();
-        this.msg = in.readString();
-        this.result = in.readString();
-    }
 
-    public static final Parcelable.Creator<BaseResponse> CREATOR = new Parcelable.Creator<BaseResponse>() {
-        @Override
-        public BaseResponse createFromParcel(Parcel source) {
-            return new BaseResponse(source);
-        }
-
-        @Override
-        public BaseResponse[] newArray(int size) {
-            return new BaseResponse[size];
-        }
-    };
 }

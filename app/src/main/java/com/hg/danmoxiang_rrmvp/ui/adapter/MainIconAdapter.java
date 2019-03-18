@@ -13,10 +13,10 @@ import com.hg.danmoxiang_rrmvp.R;
 
 public class MainIconAdapter extends BaseAdapter{
     private Context context;
-    private int [] imgs = {R.mipmap.main_icon_inout,R.mipmap.main_icon_productform,R.mipmap.main_icon_inventory
-              ,R.mipmap.main_icon_settting,R.mipmap.main_icon_back
+    private int [] imgs = {R.mipmap.main_icon_in_out_manager,R.mipmap.main_icon_form_manager,R.mipmap.main_icon_inventory_manager
+              ,R.mipmap.main_icon_setting,R.mipmap.main_icon_logout
     };
-    private  String [] strs = {"产品出入库","要货单管理","库存管理","设置","退出"};
+    private  String [] strs = {"出入库管理","要货单管理","库存管理","设置","退出"};
 
 
     public MainIconAdapter(Context context) {

@@ -196,6 +196,9 @@
             android:background="@drawable/button_bg_green"
             />
     </LinearLayout>
+        <include layout="@layout/activity_materiel_list"
+                 android:visibility="gone"
+            android:id="@+id/showmaterieldata"/>
     </LinearLayout>
 </ScrollView>
 </LinearLayout>

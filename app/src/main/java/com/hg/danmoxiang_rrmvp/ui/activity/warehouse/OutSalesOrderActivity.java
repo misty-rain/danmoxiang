@@ -7,15 +7,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.hg.danmoxiang_rrmvp.R;
-import com.hg.danmoxiang_rrmvp.mvp.base.BaseContract;
 import com.hg.danmoxiang_rrmvp.mvp.base.MvpActivity;
+import com.hg.danmoxiang_rrmvp.mvp.contract.WareHouseContract;
+import com.hg.danmoxiang_rrmvp.mvp.model.entity.Materiel;
 import com.hg.danmoxiang_rrmvp.mvp.presenter.WareHousePresenter;
-import com.hg.danmoxiang_rrmvp.ui.widget.SmoothCheckBox;
 import com.suke.widget.SwitchButton;
+
+import java.util.List;
 
 import butterknife.BindView;
 
-public class OutSalesOrderActivity extends MvpActivity<WareHousePresenter> implements BaseContract {
+public class OutSalesOrderActivity extends MvpActivity<WareHousePresenter> implements WareHouseContract {
 
 
     @BindView(R.id.edtsalesordernumber)
@@ -46,4 +48,8 @@ public class OutSalesOrderActivity extends MvpActivity<WareHousePresenter> imple
     }
 
 
+    @Override
+    public void showMaterielInfo(List<Materiel> materiel) {
+
+    }
 }

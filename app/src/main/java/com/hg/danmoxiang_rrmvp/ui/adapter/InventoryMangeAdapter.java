@@ -12,7 +12,7 @@ import com.hg.danmoxiang_rrmvp.R;
 
 public class InventoryMangeAdapter extends BaseAdapter {
     private Context context;
-    private int [] imgs = {R.mipmap.main_icon_pandian,R.mipmap.main_icon_inventory
+    private int [] imgs = {R.mipmap.inventory_icon,R.mipmap.inventory_seach_icon
     };
     private  String [] strs = {"库存盘点","库存查询"};
 

@@ -7,8 +7,8 @@ import com.hg.danmoxiang_rrmvp.mvp.model.entity.Materiel;
 import java.util.List;
 
 import io.reactivex.Observable;
-import io.reactivex.internal.operators.observable.ObservableError;
 import retrofit2.http.GET;
+import retrofit2.http.POST;
 import retrofit2.http.Query;
 
 
@@ -31,11 +31,13 @@ public interface ApiStores {
     @GET("Product/GetProductAll")
     Observable<List<Materiel>> getMaterielList();
     @GET("Product/GetProductByProductCode")
-    Observable<Materiel> getMaterielByProductCode(@Query("ProductCode") String productCode);
+    Observable<BaseResponse<List<Materiel>>> getMaterielByProductCode(@Query("ProductCode") String productCode);
     @GET("Product/GetProductByProductId")
-    Observable<Materiel> getMaterielByProductId(@Query("ProductId") String productId);
+    Observable<BaseResponse> getMaterielByProductId(@Query("ProductId") String productId);
 
-    //条码模块
+    //产品入库
+    @POST("/Business/SaveWareHouseIn")
+    Observable<BaseResponse> requestProductInWareHouse(@Query("loginName") String loginName,@Query("BillCode") String billCode,@Query("WareHouseInjsonString") String inJson);
 
 
 

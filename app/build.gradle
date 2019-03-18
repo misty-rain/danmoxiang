@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.hg.danmoxiang_rrmvp"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 22
         versionCode 1003
         versionName "1.0.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
