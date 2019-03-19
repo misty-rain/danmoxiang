@@ -15,7 +15,7 @@ public class ProductFormSearchActivity extends MvpActivity<BasePresenter> implem
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_productform);
+        setContentView(R.layout.activity_prductform_search);
         initToolBarAsHome("要货单查询");
     }
 

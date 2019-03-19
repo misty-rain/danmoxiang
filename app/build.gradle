@@ -56,5 +56,6 @@ dependencies {
     implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'//其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
     implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，
     implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    implementation 'com.haibin:calendarview:3.5.5'
 
 }

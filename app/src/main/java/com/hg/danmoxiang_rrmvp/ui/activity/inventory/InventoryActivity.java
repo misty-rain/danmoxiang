@@ -19,19 +19,12 @@ import butterknife.OnClick;
 public class InventoryActivity extends MvpActivity<InventoryPresenter> implements BaseContract {
 
 
-    @BindView(R.id.edtscann)
-    EditText edtScann;
-    @BindView(R.id.edtmaterielcount)
-    EditText edtMaterielCount;
-    @BindView(R.id.btnsearch)
-    Button btnSearch;
-    @BindView(R.id.imgscann)
-    ImageView imgScann;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inventory_search);
+        setContentView(R.layout.activity_inventory);
         initToolBarAsHome("库存盘点");
     }
 
@@ -46,7 +39,7 @@ public class InventoryActivity extends MvpActivity<InventoryPresenter> implement
         if (requestCode == SysConstants.REQUEST_CODE_SCANN_QR_CODE) {
             if (null != data) {
                 String resultStr = data.getStringExtra("resultStr");
-                edtScann.setText(resultStr);
+               // edtScann.setText(resultStr);
 
             }
         }

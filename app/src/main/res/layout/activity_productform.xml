@@ -99,19 +99,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
             android:text="@string/text_customer_name"
             android:textSize="18sp"/>
 
-        <EditText
+        <TextView
             android:id="@+id/edtoutcompany"
             android:layout_width="fill_parent"
             android:layout_height="@dimen/input_line_height"
             android:layout_marginLeft="20dp"
             android:background="@color/transparent"
-            android:inputType="text"
-            android:singleLine="true"
             android:textColor="@color/black"
-            android:textColorHint="@color/color_txt_hint"
             android:textSize="18sp"/>
     </LinearLayout>
 
@@ -213,20 +211,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
             android:text="@string/text_masteriel_info"
             android:textSize="18sp"/>
-    <EditText
+    <TextView
         android:singleLine="true"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/input_line_height"
         android:textSize="18sp"
         android:layout_marginLeft="20dp"
-        android:textColorHint="@color/color_txt_hint"
         android:textColor="@color/black"
         android:id="@+id/edtcodecount"
         android:background="@color/transparent"
-        android:inputType="text"/>
+        />
 </LinearLayout>
 
     <LinearLayout
@@ -277,6 +275,7 @@
             android:background="@color/transparent"
             android:inputType="text"
             android:singleLine="true"
+            android:enabled="false"
             android:text="0"
 
             android:textColor="@color/black"

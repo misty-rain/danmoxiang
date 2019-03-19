@@ -29,6 +29,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
+import butterknife.OnFocusChange;
 
 public class ProductInWHActivity extends MvpActivity<WareHousePresenter> implements WareHouseContract {
 
@@ -51,13 +52,19 @@ public class ProductInWHActivity extends MvpActivity<WareHousePresenter> impleme
     SwitchButton switchButton;
     @BindView(R.id.btnsave)
     Button btnSave;
-    @BindView(R.id.btnsearch)
-    Button btnSearch;
     @BindView(R.id.rlmasteriellist)
     RecyclerView recyclerView;
     @BindView(R.id.showmaterieldata)
     View showmaterieldataView;
+     @BindView(R.id.imglocationscan)
+     ImageView imgLocationScan;
+     @BindView(R.id.imgmaterielscan)
+     ImageView imgMaterielScann;
+
+
+
     List<Materiel> mMaterielList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +78,7 @@ public class ProductInWHActivity extends MvpActivity<WareHousePresenter> impleme
         startActivityForResult(new Intent(this, ScanningActivity.class), SysConstants.REQUEST_CODE_SCANN_QR_CODE);
     }
 
-    @OnClick(R.id.btnsearch)
+    @OnFocusChange(R.id.edtmaterielcode)
     public void getMaterielInfoByCode() {
         DeviceUtils.hideSoftKeyboard(this, edtMaterileCode);
         if (!TextUtils.isEmpty(edtMaterileCode.getEditableText().toString()))

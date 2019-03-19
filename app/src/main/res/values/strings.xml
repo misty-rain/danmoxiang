@@ -63,5 +63,14 @@
     <string name="text_product_count">要货数量</string>
     <string name="text_input_materiel_data">请输入物料数据</string>
 
+    <!-- 产品盘点 -->
+    <string name="text_product_code">产品编码</string>
+    <string name="text_product_name">产品名称</string>
+    <string name="text_product_model">规格型号</string>
+    <string name="input_product_code">请输入产品编码</string>
+    <string name="input_product_name">请输入产品名称</string>
+    <string name="input_product_model">请输入规格型号</string>
+
+
 
 </resources>

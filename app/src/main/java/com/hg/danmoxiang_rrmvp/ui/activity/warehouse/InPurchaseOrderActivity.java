@@ -37,6 +37,10 @@ public class InPurchaseOrderActivity extends MvpActivity<WareHousePresenter> imp
     EditText edtGetCount;
     @BindView(R.id.imgscann)
     ImageView imgScann;
+    @BindView(R.id.imglocationscan)
+    ImageView imgLocationScan;
+    @BindView(R.id.imgmaterielscan)
+    ImageView imgMaterielScan;
     @BindView(R.id.switch_button)
     SwitchButton switchButton;
     @BindView(R.id.btnsave)

@@ -30,6 +30,10 @@ public class OutSalesOrderActivity extends MvpActivity<WareHousePresenter> imple
     EditText edtOutCount;
     @BindView(R.id.imgscannout)
     ImageView imgScannOut;
+    @BindView(R.id.imglocationscan)
+    ImageView imgLcationScan;
+    @BindView(R.id.imgscanncode)
+    ImageView imgScannCode;
     @BindView(R.id.switch_button)
     SwitchButton switchButton;
     @BindView(R.id.btnsave)

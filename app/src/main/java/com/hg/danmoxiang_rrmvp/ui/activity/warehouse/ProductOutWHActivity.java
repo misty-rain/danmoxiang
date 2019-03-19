@@ -39,6 +39,10 @@ public class ProductOutWHActivity extends MvpActivity<WareHousePresenter> implem
     ImageView imgScannOut;
     @BindView(R.id.imgscanncustomer)
     ImageView imgScannCustomer;
+    @BindView(R.id.imglocationscan)
+    ImageView imgLocationScan;
+    @BindView(R.id.imgscanncode)
+    ImageView imgScannCode;
     @BindView(R.id.switch_button)
     SwitchButton switchButton;
     @BindView(R.id.btnsave)
