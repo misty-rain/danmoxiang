@@ -5,7 +5,6 @@ import com.hg.danmoxiang_rrmvp.mvp.contract.WareHouseContract;
 import com.hg.danmoxiang_rrmvp.mvp.model.entity.BaseResponse;
 import com.hg.danmoxiang_rrmvp.mvp.model.entity.Materiel;
 import com.hg.danmoxiang_rrmvp.retrofit.ApiCallback;
-import com.wuxiaolong.androidutils.library.LogUtil;
 
 import java.util.List;
 
@@ -15,18 +14,18 @@ public class WareHousePresenter extends BasePresenter<WareHouseContract> {
     }
 
 
-    public void productInWH(String billCode,String json) {
+    public void productInWH(String billCode, String json) {
         mvpView.showLoading();
-        addSubscription(apiStores.requestProductInWareHouse("", billCode, json), new ApiCallback< BaseResponse>() {
+        addSubscription(apiStores.requestProductInWareHouse("", billCode, json), new ApiCallback<BaseResponse>() {
 
             @Override
             public void onSuccess(BaseResponse model) {
-
+                mvpView.showMsg(model.getMsg());
             }
 
             @Override
             public void onFailure(String msg) {
-
+                mvpView.showMsg(msg);
             }
 
             @Override
@@ -54,20 +53,16 @@ public class WareHousePresenter extends BasePresenter<WareHouseContract> {
 
             @Override
             public void onSuccess(BaseResponse<List<Materiel>> model) {
-                LogUtil.d("json");
-                //mvpView.showMaterielInfo(model);
                 if (model.getResult().equals("1")) {
-                    //ist<Link> materielList = (ArrayList<Materiel>) model.getData();
-
                     mvpView.showMaterielInfo(model.getData());
                 } else {
-                    mvpView.showError(model.getMsg());
+                    mvpView.showMsg(model.getMsg());
                 }
             }
 
             @Override
             public void onFailure(String msg) {
-                mvpView.showError(msg);
+                mvpView.showMsg(msg);
             }
 
             @Override

@@ -187,7 +187,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         Toast.makeText(mActivity, resId, Toast.LENGTH_SHORT).show();
     }
 
-    public void showError(String msg) {
+    public void showMsg(String msg) {
         toastShow(msg);
     }
 

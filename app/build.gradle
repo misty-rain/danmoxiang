@@ -6,8 +6,8 @@ android {
         applicationId "com.hg.danmoxiang_rrmvp"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1003
-        versionName "1.0.0.3"
+        versionCode 1004
+        versionName "1.0.0.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

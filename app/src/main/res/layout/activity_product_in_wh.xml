@@ -118,6 +118,7 @@
             android:layout_width="fill_parent"
             android:layout_height="@dimen/input_line_height"
             android:hint="@string/input_materiel_code"
+            android:layout_weight="1"
             android:textSize="18sp"
             android:layout_marginLeft="20dp"
             android:textColorHint="@color/color_txt_hint"
@@ -125,6 +126,16 @@
             android:id="@+id/edtmaterielcode"
             android:background="@color/transparent"
             android:inputType="text"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="2"
+            android:text="@string/btn_text_search"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:id="@+id/btnsearch"
+            android:background="@color/enable_button"
+            />
     </LinearLayout>
 
     <LinearLayout

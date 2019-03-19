@@ -61,6 +61,7 @@
     <string name="text_masteriel_info">物料信息</string>
     <string name="text_inventory_count">库存数量</string>
     <string name="text_product_count">要货数量</string>
+    <string name="text_input_materiel_data">请输入物料数据</string>
 
 
 </resources>

@@ -26,8 +26,10 @@ public class MaterielHolder extends BaseHolder<Materiel> {
 
     public MaterielHolder(View itemView) {
         super(itemView);
-
     }
+
+
+
 
     @Override
     public void setData(@NonNull Materiel data, int position) {
@@ -35,6 +37,6 @@ public class MaterielHolder extends BaseHolder<Materiel> {
         txtCount.setText("1");
         txtName.setText(data.getProductCName());
         txtModel.setText(data.getState());
-        txtLocation.setText(data.getState());
+        txtLocation.setText(data.getDefaultWareHouseLocation());
     }
 }
