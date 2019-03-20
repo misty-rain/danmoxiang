@@ -44,6 +44,7 @@
         <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormActivity" />
         <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormMangeActivity" />
         <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.productform.ProductFormSearchActivity" />
+        <activity android:name="com.hg.danmoxiang_rrmvp.ui.activity.DatePickerActivity" />
         <activity
             android:name="com.tencent.bugly.beta.ui.BetaActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|locale"

@@ -6,8 +6,8 @@ android {
         applicationId "com.hg.danmoxiang_rrmvp"
         minSdkVersion 15
         targetSdkVersion 22
-        versionCode 1004
-        versionName "1.0.0.4"
+        versionCode 1008
+        versionName "1.0.0.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -19,6 +19,15 @@ android {
     compileOptions {
         sourceCompatibility = '1.8'
         targetCompatibility = '1.8'
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
     }
 }
 ext {
@@ -57,5 +66,6 @@ dependencies {
     implementation 'com.tencent.bugly:nativecrashreport:latest.release' //其中latest.release指代最新版本号，
     implementation 'com.jaeger.statusbarutil:library:1.5.1'
     implementation 'com.haibin:calendarview:3.5.5'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
 }

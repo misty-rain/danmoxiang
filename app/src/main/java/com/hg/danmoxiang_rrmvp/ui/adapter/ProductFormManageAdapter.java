@@ -14,7 +14,7 @@ public class ProductFormManageAdapter extends BaseAdapter {
     private Context context;
     private int [] imgs = {R.mipmap.pf_form_icon,R.mipmap.pf_form_search
     };
-    private  String [] strs = {"要货单","要货单状态查询"};
+    private  String [] strs = {"要货单","货单查询"};
 
 
     public ProductFormManageAdapter(Context context) {

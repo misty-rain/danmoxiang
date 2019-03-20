@@ -43,7 +43,7 @@ public class OutSalesOrderActivity extends MvpActivity<WareHousePresenter> imple
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_out_sales_order);
-        initToolBarAsHome("销售订单出库");
+        initToolBarAsHome("销售单出库");
     }
 
     @Override
